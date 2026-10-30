@@ -66,7 +66,6 @@ export default function ParchiActions({
 
       const filename = getExportFilename();
       const file = new File([blob], filename, { type: "image/png" });
-      const shareText = "Assalamu Alaikum, aaj ki Noorani Masjid parchi.";
 
       // 1. Mobile Web Share API: share directly to WhatsApp without downloading
       if (
@@ -78,7 +77,6 @@ export default function ParchiActions({
           await navigator.share({
             files: [file],
             title: "Noorani Masjid Parchi",
-            text: shareText,
           });
           toast.success("Shared on WhatsApp successfully!");
           return;
@@ -108,11 +106,8 @@ export default function ParchiActions({
       const isMobile =
         typeof navigator !== "undefined" &&
         /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-      const encodedMsg = encodeURIComponent(shareText);
 
-      const waUrl = isMobile
-        ? `whatsapp://send?text=${encodedMsg}`
-        : `https://web.whatsapp.com/send?text=${encodedMsg}`;
+      const waUrl = isMobile ? "whatsapp://send" : "https://web.whatsapp.com";
 
       if (copiedToClipboard) {
         toast.success(
