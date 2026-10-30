@@ -38,7 +38,7 @@ const NAME_FIELDS = [
     key: "mukam",
     labelEn: "Mukam",
     labelUr: "مقام",
-    placeholder: "Name of host",
+    placeholder: "Name",
   },
   {
     key: "talim",
