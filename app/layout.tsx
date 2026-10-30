@@ -54,7 +54,7 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>
-        <Toaster position="bottom-center" />
+        <Toaster position="top-right" duration={2000} />
       </body>
     </html>
   );
