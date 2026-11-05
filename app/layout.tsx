@@ -52,7 +52,7 @@ export default function RootLayout({
         "font-sans"
       )}
     >
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider>{children}</ThemeProvider>
         <Toaster position="top-right" duration={2000} />
       </body>

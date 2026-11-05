@@ -85,7 +85,7 @@ export default function ParchiForm({ values, errors, onChange }: ParchiFormProps
   const selectedDate = parseDateString(values.date);
 
   return (
-    <Card>
+    <Card className="bg-white">
       <CardHeader>
         <CardTitle className="text-lg">Today&apos;s Details</CardTitle>
       </CardHeader>

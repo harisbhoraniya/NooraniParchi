@@ -19,12 +19,12 @@ export interface FieldConfig {
 }
 
 export const FIELDS: Record<string, FieldConfig> = {
-  day: { x1: 258, x2: 618, y: 514, size: 60, lift: 16 },
-  date: { x1: 1250, x2: 1710, y: 515, size: 60, lift: 16 },
-  mukam: { x1: 360, x2: 1725, y: 670, size: 76, lift: 20 },
-  talim: { x1: 292, x2: 1728, y: 825, size: 76, lift: 20 },
-  sifat: { x1: 335, x2: 1652, y: 980, size: 76, lift: 20 },
-  istekbal: { x1: 365, x2: 1684, y: 1134, size: 76, lift: 20 },
+  day: { x1: 258, x2: 620, y: 523, size: 60, lift: 16 },
+  date: { x1: 1246, x2: 1712, y: 521, size: 60, lift: 16 },
+  mukam: { x1: 356, x2: 1728, y: 681, size: 64, lift: 18 },
+  talim: { x1: 292, x2: 1728, y: 834, size: 64, lift: 18 },
+  sifat: { x1: 332, x2: 1648, y: 996, size: 64, lift: 18 },
+  istekbal: { x1: 370, x2: 1670, y: 1148, size: 64, lift: 18 },
 };
 
 export const REQUIRED_FIELDS: string[] = [];
